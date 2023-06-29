@@ -21,7 +21,7 @@ public class EditMenu  {
 		frame.setLocation(500, 200);
 
 
-		JLabel name = new JLabel("Menu Name :");
+		JLabel name = new JLabel("Menu Name ");
 		name.setBounds(10, 10, 100, 100);
 		frame.add(name);
 
@@ -32,7 +32,7 @@ public class EditMenu  {
 		menu.setText(menuName);                             //setmenuname from selected table row
 
 
-		JLabel price = new JLabel("Menu Price :");
+		JLabel price = new JLabel("Menu Price ");
 		price.setBounds(10, 50, 100, 100);
 		frame.add(price);  
 

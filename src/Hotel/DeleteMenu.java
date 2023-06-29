@@ -20,14 +20,10 @@ public class DeleteMenu {
 		frame.setLocation(450, 200);
 		frame.setLayout(null);
 
-		JLabel label = new JLabel("Do you want delete menu");
+		JLabel label = new JLabel("Do you want delete " +menuName+" "+"?");
 		label.setBounds(10, 00, 200, 100);
 		frame.add(label);
 
-		JTextField menu = new JTextField();
-		menu.setBounds(180, 40, 90, 25);
-		frame.add(menu);
-		menu.setText(menuName);
 
 		JButton yes = new JButton("Yes");
 		yes.setBounds(50, 100, 60, 25);
@@ -60,6 +56,8 @@ public class DeleteMenu {
 
 					@Override
 					public void actionPerformed(ActionEvent e) {
+						
+						frame.dispose();
 
 						try {
 							Class.forName("com.mysql.jdbc.Driver");
