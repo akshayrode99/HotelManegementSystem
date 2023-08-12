@@ -17,7 +17,8 @@ import javax.swing.table.DefaultTableModel;
 public class orderDetails {
 
 	public static DefaultTableModel model = null;
-
+   
+	
 
 	public void orderDetail(String orderIdd) {
 
@@ -51,7 +52,8 @@ public class orderDetails {
 
 
 			ResultSet rs = st.executeQuery(order);
-
+			
+            System.out.println(rs);
 
 			Statement sta = con.createStatement();
 
